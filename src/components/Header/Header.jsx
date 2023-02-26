@@ -1,10 +1,18 @@
 import React from 'react';
 import css from './Header.module.scss';
 import { BiPhoneCall } from 'react-icons/bi';
+import { motion } from 'framer-motion';
+import { headerVariants } from '../../utils/motion';
 
 const Header = () => {
   return (
-    <div className={`paddings ${css.wrapper}`}>
+    <motion.div
+      initial='hidden'
+      whileInView='show'
+      variants={headerVariants}
+      viewport={{ once: false, amount: 0.25 }}
+      className={`paddings ${css.wrapper}`}
+    >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Jerald</div>
         <ul className={`flexCenter ${css.menu}`}>
@@ -24,7 +32,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
