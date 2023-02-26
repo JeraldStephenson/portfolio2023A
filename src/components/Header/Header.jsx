@@ -7,7 +7,7 @@ const Header = () => {
     <div className={`paddings ${css.wrapper}`}>
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Jerald</div>
-        <ul>
+        <ul className={`flexCenter ${css.menu}`}>
           <li>
             <a href=''>About Me</a>
             {/* download resume - quick snippet about myself */}
@@ -18,7 +18,7 @@ const Header = () => {
           <li>
             <a href=''>Portfolio</a>
           </li>
-          <li>
+          <li className={`flexCenter ${css.phone}`}>
             <p>+1 (209) 923-7926</p>
             <BiPhoneCall size={'40px'} />
           </li>
