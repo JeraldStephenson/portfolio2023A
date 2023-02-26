@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './Header.module.scss';
-import { BiPhoneCall } from 'react-icons/bi';
+import { BiPhoneCall, BiMenuAltRight } from 'react-icons/bi';
 import { motion } from 'framer-motion';
-import { headerVariants } from '../../utils/motion';
+import { getMenuStyles, headerVariants } from '../../utils/motion';
 
 const Header = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
+
   return (
     <motion.div
       initial='hidden'
@@ -15,7 +17,10 @@ const Header = () => {
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Jerald</div>
-        <ul className={`flexCenter ${css.menu}`}>
+        <ul
+          style={getMenuStyles(menuOpened)}
+          className={`flexCenter ${css.menu}`}
+        >
           <li>
             <a href=''>About Me</a>
             {/* download resume - quick snippet about myself */}
@@ -31,6 +36,15 @@ const Header = () => {
             <BiPhoneCall size={'40px'} />
           </li>
         </ul>
+        {/* for medium and small screens */}
+        <div
+          className={css.menuIcon}
+          onClick={() => {
+            setMenuOpened((prev) => !prev);
+          }}
+        >
+          <BiMenuAltRight size={30} />
+        </div>
       </div>
     </motion.div>
   );
