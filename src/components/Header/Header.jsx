@@ -3,9 +3,11 @@ import css from './Header.module.scss';
 import { BiPhoneCall, BiMenuAltRight } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
+import useHeaderShadow from '../../hooks/useHeaderShadow';
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
+  const headerShadow = useHeaderShadow();
 
   return (
     <motion.div
@@ -14,6 +16,8 @@ const Header = () => {
       variants={headerVariants}
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper}`}
+      // the border-shadow that appears on header when we scroll down to create a divider
+      style={{ boxShadow: headerShadow }}
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Jerald</div>
