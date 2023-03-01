@@ -9,7 +9,7 @@ const App = () => {
     <div className={`bg-primary ${css.container}`}>
       <Header />
       <Hero />
-      <ProjectOverview />
+      {/* <ProjectOverview /> */}
     </div>
   );
 };
