@@ -26,7 +26,7 @@ const Hero = () => {
             className='secondaryText'
           >
             I am a full-stack engineer <br />
-            and I love what I do
+            that loves to solve problems
           </motion.span>
         </div>
         {/* person image */}
