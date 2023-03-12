@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import css from './Header.module.scss';
 import { BiPhoneCall, BiMenuAltRight } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
 import useHeaderShadow from '../../hooks/useHeaderShadow';
+import useOutsideAlerter from '../../hooks/useOutsideAlerter';
 
 const Header = () => {
+  const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
+
+  //to handle click outside of sidebar on mobile
+  useOutsideAlerter({
+    menuRef,
+    setMenuOpened,
+  });
 
   return (
     <motion.div
@@ -15,7 +23,7 @@ const Header = () => {
       whileInView='show'
       variants={headerVariants}
       viewport={{ once: false, amount: 0.25 }}
-      className={`paddings ${css.wrapper}`}
+      className={`bg-primary paddings ${css.wrapper}`}
       // the border-shadow that appears on header when we scroll down to create a divider
       style={{ boxShadow: headerShadow }}
     >
@@ -23,6 +31,7 @@ const Header = () => {
         <div className={css.name}>Jerald</div>
         <ul
           style={getMenuStyles(menuOpened)}
+          ref={menuRef}
           className={`flexCenter ${css.menu}`}
         >
           <li>
