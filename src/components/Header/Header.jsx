@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import css from './Header.module.scss';
-import { BiPhoneCall, BiMenuAltRight } from 'react-icons/bi';
+import { BiPhoneCall, BiMenuAltRight, BiMailSend } from 'react-icons/bi';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
 import useHeaderShadow from '../../hooks/useHeaderShadow';
@@ -44,10 +45,36 @@ const Header = () => {
           <li>
             <a href='#portfolio'>Portfolio</a>
           </li>
-          <li className={`flexCenter ${css.phone}`}>
+          <li>
+            <div className={`${css.headerIconContainer}`}>
+              <a className={`${css.headerIcon}`} href=''>
+                <BsLinkedin />
+              </a>
+              <p className={`${css.headerIconText}`}> LinkedIn</p>
+            </div>
+          </li>
+
+          <li>
+            <div className={`${css.headerIconContainer}`}>
+              <a className={`${css.headerIcon}`} href=''>
+                <BsGithub />
+              </a>
+              <p className={`${css.headerIconText}`}> GitHub</p>
+            </div>
+          </li>
+          <li>
+            <div className={`${css.headerIconContainer}`}>
+              <a className={`${css.headerIcon}`} href=''>
+                <BiMailSend />
+              </a>
+              <p className={`${css.headerIconText}`}> Email me</p>
+            </div>
+          </li>
+          {/* <li className={css.headerIconText}>email</li> */}
+          {/* <li className={`flexCenter ${css.phone}`}>
             <p>+1 (209) 923-7926</p>
             <BiPhoneCall size={'40px'} />
-          </li>
+          </li> */}
         </ul>
         {/* for medium and small screens */}
         <div

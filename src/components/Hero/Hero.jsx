@@ -87,13 +87,6 @@ const Hero = () => {
             variants={fadeIn('left', 'tween', 0.8, 2)}
             className={` ${css.stackIcons}`}
           >
-            {/* <a href='https://github.com/JeraldStephenson' target='blank'>
-              
-            </a>
-            <a href='https://github.com/JeraldStephenson' target='blank'>
-              
-            </a>
-            <a href='https://github.com/JeraldStephenson' target='blank'></a> */}
             <div className={`${css.icons}`}>
               <a>
                 <TbBrandHtml5 />
