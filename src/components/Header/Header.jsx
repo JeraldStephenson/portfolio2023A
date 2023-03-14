@@ -47,27 +47,59 @@ const Header = () => {
           </li>
           <li>
             <div className={`${css.headerIconContainer}`}>
-              <a className={`${css.headerIcon}`} href=''>
+              <a
+                className={`${css.headerIcon}`}
+                href='https://www.linkedin.com/in/jerald-stephenson/'
+                target={'_blank'}
+              >
                 <BsLinkedin />
               </a>
-              <p className={`${css.headerIconText}`}> LinkedIn</p>
+              <a
+                className={`${css.headerIconText}`}
+                href='https://www.linkedin.com/in/jerald-stephenson/'
+                target={'_blank'}
+              >
+                {' '}
+                LinkedIn
+              </a>
             </div>
           </li>
 
           <li>
             <div className={`${css.headerIconContainer}`}>
-              <a className={`${css.headerIcon}`} href=''>
+              <a
+                className={`${css.headerIcon}`}
+                href='https://github.com/JeraldStephenson'
+                target={'_blank'}
+              >
                 <BsGithub />
               </a>
-              <p className={`${css.headerIconText}`}> GitHub</p>
+              <a
+                href='https://github.com/JeraldStephenson'
+                target={'_blank'}
+                className={`${css.headerIconText}`}
+              >
+                {' '}
+                GitHub
+              </a>
             </div>
           </li>
           <li>
             <div className={`${css.headerIconContainer}`}>
-              <a className={`${css.headerIcon}`} href=''>
+              <a
+                className={`${css.headerIcon}`}
+                href='mailto:jstephenson.dev@gmail.com'
+                // target={'_blank'}
+              >
                 <BiMailSend />
               </a>
-              <p className={`${css.headerIconText}`}> Email me</p>
+              <a
+                className={`${css.headerIconText}`}
+                href='mailto:jstephenson.dev@gmail.com'
+              >
+                {' '}
+                Email me
+              </a>
             </div>
           </li>
           {/* <li className={css.headerIconText}>email</li> */}
