@@ -12,9 +12,9 @@
       align-items: flex-end;
       flex-wrap: wrap;
       > :nth-child(2) {
-        text-decoration: underline;
+        // text-decoration: underline;
         color: orange;
-        cursor: pointer;
+        // cursor: pointer;
       }
     }
   }
@@ -43,6 +43,23 @@
       max-width: 25rem;
       max-height: 18rem;
       box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+    }
+
+    .launchLink {
+      color: #286f6c;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+    .linkContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      a {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: orange;
+      }
     }
   }
 }

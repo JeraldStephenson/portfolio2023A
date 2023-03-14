@@ -58,7 +58,13 @@ const Portfolio = () => {
             className={`paddings ${css.showCase}`}
           >
             <p className='paddings'>
-              GraphErrQL official launch site
+              <a
+                className={`secondaryText ${css.launchLink}`}
+                href='http://grapherrql.io/'
+                target={'_blank'}
+              >
+                GraphErrQL launch site
+              </a>
               <br />
               <br />
               GraphErrQL is an npm developer tool I co-created with a small team
@@ -68,7 +74,36 @@ const Portfolio = () => {
               within a natural and nondisruptive to the developer workflow.
               <br />
               <br />
-              GitHub repo and readme
+              <div className={`${css.linkContainer}`}>
+                <a
+                  className={`secondaryText `}
+                  href='https://github.com/oslabs-beta/GraphErrQL/tree/dev/grapherrql-package'
+                  target={'_blank'}
+                >
+                  GitHub
+                </a>
+                <a
+                  className={`secondaryText `}
+                  href='https://www.npmjs.com/org/grapherrql'
+                  target={'_blank'}
+                >
+                  NPM
+                </a>
+                <a
+                  className={`secondaryText `}
+                  href='https://medium.com/@gkphillips/introducing-grapherrql-22d877a8f353'
+                  target={'_blank'}
+                >
+                  Medium-Article
+                </a>
+                <a
+                  className={`secondaryText `}
+                  href='https://thenewstack.io/grapherrql-provides-much-needed-context-for-graphql-errors/'
+                  target={'_blank'}
+                >
+                  TheNewStack-Article
+                </a>
+              </div>
             </p>
           </motion.div>
         </div>
@@ -100,7 +135,15 @@ const Portfolio = () => {
               before our Holiday parties.
               <br />
               <br />
-              GitHub repo and readme
+              <div className={`${css.linkContainer}`}>
+                <a
+                  className={`secondaryText `}
+                  href='https://github.com/JeraldStephenson/project-infect'
+                  target={'_blank'}
+                >
+                  GitHub
+                </a>
+              </div>
             </p>
           </motion.div>
         </div>
