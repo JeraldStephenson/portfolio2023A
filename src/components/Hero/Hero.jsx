@@ -2,12 +2,7 @@ import React from 'react';
 import css from './Hero.module.scss';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, slideIn } from '../../utils/motion';
-import {
-  TbBrandJavascript,
-  TbBrandHtml5,
-  TbBrandCss3,
-  
-} from 'react-icons/tb';
+import { TbBrandJavascript, TbBrandHtml5, TbBrandCss3 } from 'react-icons/tb';
 import { FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
 import {
   SiTypescript,
@@ -21,7 +16,7 @@ import {
   SiKubernetes,
 } from 'react-icons/si';
 
-import Resume from '../../../public/Resume.pdf';
+import Resume from '../../../public/Jerald-Stephenson-Resume.pdf';
 
 const Hero = () => {
   return (

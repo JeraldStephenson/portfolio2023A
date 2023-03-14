@@ -26,7 +26,13 @@ const Portfolio = () => {
               Perfect solution for digial experience
             </p> */}
           </div>
-          <span className='secondaryText'>Explore More Works</span>
+          <a
+            href='https://github.com/JeraldStephenson'
+            target={'_blank'}
+            className='secondaryText'
+          >
+            Explore my GitHub
+          </a>
         </div>
         {/*  images - replace src with screenshots of my projects */}{' '}
         <div className={`flexCenter ${css.listContainer}`}>
@@ -50,7 +56,6 @@ const Portfolio = () => {
             className={`paddings ${css.showCase}`}
           >
             <p className='paddings'>
-              
               GraphErrQL official launch site
               <br />
               <br />
