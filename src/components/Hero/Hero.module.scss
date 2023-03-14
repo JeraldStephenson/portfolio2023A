@@ -42,7 +42,7 @@
       .stackIcons {
         @media (max-width: $sm) {
           display: grid;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         @media ($sm < width <= 900px) {
