@@ -5,6 +5,13 @@
   background: white;
 
   .container {
+    display: flex;
+    flex-direction: column;
+    > :nth-child(2){
+      align-self: center;
+    }
+    // align-items: center;
+
     position: relative;
     z-index: 1;
     .upperElements {
@@ -23,7 +30,7 @@
       @media (max-width: $sm), (max-width: $md) {
         margin-top: 4rem;
         gap: 2rem;
-        // justify-content: center;
+        flex-direction: column;
       }
       border-bottom: 2px solid #0d2f3f;
       margin-top: 4rem;
@@ -103,21 +110,21 @@
       }
     }
     .box {
-      @media (max-width: $sm) {
-        position: relative;
-        left: 0%;
-        // background-size: 0rem;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // background-position: bottom;
-        height: 200px;
-        width: 200px;
-      }
+      // @media (max-width: $sm) {
+      //   position: relative;
+      //   // left: 0%;
+      //   // background-size: 0rem;
+      //   // display: flex;
+      //   // align-items: center;
+      //   // justify-content: center;
+      //   // background-position: bottom;
+      //   height: 300px;
+      //   width: 300px;
+      // }
       @media (max-width: $md) {
-        position: relative;
-        left: 7%;
-        margin-top: 25px;
+        // position: relative;
+        // left: 7%;
+        margin-top: 2rem;
         // background-size: 0rem;
         // display: flex;
         // align-items: center;
@@ -133,7 +140,7 @@
       border-radius: 50%;
       overflow: hidden;
       display: flex;
-      left: 33%;
+      // left: 33%;
 
       &::before {
         content: '';
@@ -262,15 +269,15 @@
     //   }
     // }
 
-    .email {
-      @media (max-width: $sm) {
-        position: relative;
-        display: none;
-      }
-      position: absolute;
-      top: 50%;
-      left: 0%;
-      color: orange;
-    }
+    // .email {
+    //   @media (max-width: $sm) {
+    //     position: relative;
+    //     display: none;
+    //   }
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 0%;
+    //   color: orange;
+    // }
   }
 }
