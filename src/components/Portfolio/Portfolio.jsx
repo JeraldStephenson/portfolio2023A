@@ -24,9 +24,6 @@ const Portfolio = () => {
         <div className={`flexCenter ${css.heading}`}>
           <div>
             <span className='primaryText'>My Latest Work</span>
-            {/* <p style={{ marginTop: '10px' }}>
-              Perfect solution for digial experience
-            </p> */}
           </div>
           <a
             href='https://github.com/JeraldStephenson'
@@ -36,7 +33,6 @@ const Portfolio = () => {
             Explore my GitHub
           </a>
         </div>
-        {/*  images - replace src with screenshots of my projects */}{' '}
         <div className={`flexCenter ${css.listContainer}`}>
           {/* PROJECT 1: GRAPHERRQL */}
           <motion.div
@@ -147,16 +143,6 @@ const Portfolio = () => {
             </p>
           </motion.div>
         </div>
-        {/* <MotionConfig.img
-            variants={fadeIn('up', 'tween', 0.5, 0.6)}
-            src='./showCase2.png'
-            alt='project'
-          />
-          <MotionConfig.img
-            variants={fadeIn('up', 'tween', 0.5, 0.6)}
-            src='./showCase3.png'
-            alt='project'
-          /> */}
       </div>
     </motion.section>
   );

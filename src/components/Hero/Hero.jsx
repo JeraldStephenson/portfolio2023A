@@ -66,11 +66,6 @@ const Hero = () => {
             </a>
           </motion.div>
         </motion.div>
-        {/* email */}
-        {/* <a href='mailto:jstephenson.dev@gmail.com' className={css.email}>
-          jstephenson.dev@gmail.com
-        </a> */}
-
         {/* lower elements */}
         <div className={css.lowerElements}>
           <motion.div
@@ -83,6 +78,7 @@ const Hero = () => {
               <div>Stack</div>
             </div>
           </motion.div>
+          {/* should use an array and a function to parse all of the repeat code - will refactor after MVP is hosted */}
           <motion.div
             variants={fadeIn('left', 'tween', 0.8, 2)}
             className={` ${css.stackIcons}`}

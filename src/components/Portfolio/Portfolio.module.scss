@@ -1,7 +1,6 @@
 @import '../../styles/constants.scss';
 
 .wrapper {
-  // background: white;
   overflow: hidden;
   .container {
     flex-direction: column;
@@ -12,9 +11,7 @@
       align-items: flex-end;
       flex-wrap: wrap;
       > :nth-child(2) {
-        // text-decoration: underline;
         color: orange;
-        // cursor: pointer;
       }
     }
   }
