@@ -35,14 +35,14 @@ const Header = () => {
           className={`flexCenter ${css.menu}`}
         >
           <li>
-            <a href=''>About Me</a>
+            <a href='#'>About Me</a>
             {/* download resume - quick snippet about myself */}
           </li>
-          <li>
+          {/* <li>
             <a href=''>Experience</a>
-          </li>
+          </li> */}
           <li>
-            <a href=''>Portfolio</a>
+            <a href='#portfolio'>Portfolio</a>
           </li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 (209) 923-7926</p>
