@@ -32,18 +32,27 @@ const Hero = () => {
         {/* person image */}
         <motion.div
           variants={fadeIn('up', 'tween', 0.3, 1)}
-          className={css.person}
+          className={`${css.box} `}
         >
-          <motion.img
-            variants={slideIn('up', 'tween', 0.5, 1.3)}
-            src='./profilepic.png'
-            alt='profile pic of Jerald Stephenson'
-          />
+          <motion.div
+            variants={fadeIn('up', 'tween', 0.3, 1)}
+            className={`${css.content}`}
+          >
+            <img
+              src='./profilepic.png'
+              alt='profile pic of Jerald Stephenson'
+            />
+            <h2>
+              <span>Download My</span>
+            </h2>
+            <br />
+            <a href='#'>Resume/CV</a>
+          </motion.div>
         </motion.div>
         {/* email */}
-        <a href='mailto:jstephenson.dev@gmail.com' className={css.email}>
+        {/* <a href='mailto:jstephenson.dev@gmail.com' className={css.email}>
           jstephenson.dev@gmail.com
-        </a>
+        </a> */}
 
         {/* lower elements */}
         <div className={css.lowerElements}>

@@ -51,12 +51,18 @@ const Header = () => {
         </ul>
         {/* for medium and small screens */}
         <div
-          className={css.menuIcon}
-          onClick={() => {
-            setMenuOpened((prev) => !prev);
-          }}
+        // className={css.menuIcon}
+        // onClick={() => {
+        //   setMenuOpened((prev) => !prev);
+        // }}
         >
-          <BiMenuAltRight size={30} />
+          <BiMenuAltRight
+            size={30}
+            className={css.menuIcon}
+            onClick={() => {
+              setMenuOpened((prev) => !prev);
+            }}
+          />
         </div>
       </div>
     </motion.div>

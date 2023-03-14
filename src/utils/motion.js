@@ -145,7 +145,7 @@ export const staggerChildren = {
 };
 
 export const getMenuStyles = (menuOpened) => {
-  if (document.documentElement.clientWidth <= 640) {
+  if (document.documentElement.clientWidth <= 768) {
     // if menuOpened is falsey -> return a style of 'right: -100%' to our menu list (hide it off screen)
     return { right: !menuOpened && '-100%' };
   }

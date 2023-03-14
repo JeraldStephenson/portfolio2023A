@@ -74,6 +74,9 @@
     .menuIcon {
       @media (max-width: $sm), (max-width: $md) {
         display: block;
+        &:hover {
+          cursor: pointer;
+        }
       }
       display: none;
     }
