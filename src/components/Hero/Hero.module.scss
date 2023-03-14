@@ -23,12 +23,13 @@
       @media (max-width: $sm), (max-width: $md) {
         margin-top: 4rem;
         gap: 2rem;
-        justify-content: center;
+        // justify-content: center;
       }
       border-bottom: 2px solid #0d2f3f;
       margin-top: 12rem;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       justify-content: space-between;
       .experience {
         display: flex;
@@ -39,12 +40,27 @@
         }
       }
       .stackIcons {
-        display: flex;
-        justify-content: space-around;
-        // align-items: center;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        // flex: auto;
+        @media (max-width: $sm) {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media ($sm < width <= 900px) {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media (901px <= width <= $xl) {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+
+        // grid-auto-flow: column;
+
         .icons {
           // @media (max-width: $sm) {
           //   // grid-auto-rows: auto;
@@ -66,7 +82,7 @@
             }
 
             line-height: 30px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
             text-decoration: none;
             color: #0d2f3f;
@@ -78,9 +94,10 @@
             @media (max-width: $sm) {
               padding-left: 5px;
               padding-right: 5px;
-              font-size: 0.8rem;
+              font-size: 0.6rem;
               line-height: 15px;
             }
+            font-size: 0.8rem;
           }
         }
       }
