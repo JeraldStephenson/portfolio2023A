@@ -3,7 +3,7 @@ import css from './Hero.module.scss';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, slideIn } from '../../utils/motion';
 import { TbBrandJavascript, TbBrandHtml5, TbBrandCss3 } from 'react-icons/tb';
-import { FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDocker, FaSass } from 'react-icons/fa';
 import {
   SiTypescript,
   SiExpress,
@@ -176,6 +176,12 @@ const Hero = () => {
                 <SiKubernetes />
               </a>
               <p>Kubernetes</p>
+            </div>
+            <div className={`${css.icons}`}>
+              <a>
+                <FaSass />
+              </a>
+              <p>Sass/Scss</p>
             </div>
           </motion.div>
         </div>
