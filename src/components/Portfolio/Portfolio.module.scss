@@ -16,20 +16,19 @@
     }
   }
   .projectType {
+    @media (max-width: $sm) {
+      font-size: 1.3rem;
+    }
     display: flex;
     flex-wrap: wrap;
     align-self: flex-start;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: $sm) {
-      font-size: 1.7rem;
-    }
-    
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 0;
     width: 100%;
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid;
   }
   .listContainer {
     @media (max-width: $sm), (max-width: $md), (max-width: $lg) {
@@ -64,7 +63,7 @@
       font-weight: 800;
     }
     .linkContainer {
-      @media (max-width: $lg){
+      @media (max-width: $lg) {
         flex-direction: column;
         gap: 0rem;
       }
