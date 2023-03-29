@@ -73,6 +73,17 @@ const Portfolio = () => {
               GraphQL query validation, metrics, and error assistance. We
               created this product with an emphasis on utilizing these tools
               within a natural and nondisruptive to the developer workflow.
+              <br />
+              <br />
+              GraphErrQL was developed and maintained under the tech accelerator
+              <a
+                href='https://www.opensourcelabs.io/'
+                target={'_blank'}
+                className={`${css.osLabs}`}
+              >
+                OSLabs
+              </a>
+              .
             </p>
             <div className={`xPaddings ${css.linkContainer}`}>
               <a
@@ -134,9 +145,9 @@ const Portfolio = () => {
             <p className='paddings'>
               The Hop is an event searching and bookmarking open source
               application in which I contributed end-to-end testing utilizing
-              Cypress. The gif is Cypress running the tests I wrote,
-              showing the automated end-to-end testing of a real user scenario
-              in a replicated live setting.
+              Cypress. The gif is Cypress running the tests I wrote, showing the
+              automated end-to-end testing of a real user scenario in a
+              replicated live setting.
             </p>
             <div className={`xPaddings ${css.linkContainer}`}>
               <a
@@ -176,13 +187,11 @@ const Portfolio = () => {
             className={`paddings ${css.showCase}`}
           >
             <p className='paddings'>
-              A macOS local multiplayer game in which players compete to be the
-              dominant zombie virus strain. This is a porject I took on to learn
-              the basics of native iOS programming language and library (Swift
-              and SwiftUI) to create a small game to play with family members
-              before our Holiday parties.
-              <br />
-              <br />
+              Big Brain Z-Strain is a macOS local multiplayer game in which
+              players compete to be the dominant zombie virus strain. This is an
+              ongoing project I took on to learn the basics of native iOS
+              programming language and library (Swift and SwiftUI) to create a
+              small game to enjoy with family and friends.
             </p>
             <div className={`xPaddings ${css.linkContainer}`}>
               <a

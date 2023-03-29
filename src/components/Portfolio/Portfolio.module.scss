@@ -58,9 +58,15 @@
     }
 
     .launchLink {
-      color: #286f6c;
+      color: $secondary;
       font-size: 1.3rem;
       font-weight: 800;
+    }
+    .osLabs {
+      color: $secondary;
+      font-weight: 600;
+      text-decoration: none;
+      padding-left: 4px;
     }
     .linkContainer {
       @media (max-width: $lg) {
