@@ -15,12 +15,12 @@ const Portfolio = () => {
       variants={staggerChildren}
       initial='hidden'
       whileInView='show'
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.15 }}
       className={`paddings ${css.wrapper}`}
     >
       <a className='anchor' id='portfolio'></a>
       <br />
-      <div className={`innerwidth flexCenter ${css.container}`}>
+      <div className={`innerWidth flexCenter ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
           <div>
             <span className='primaryText'>My Latest Work</span>
@@ -33,19 +33,24 @@ const Portfolio = () => {
             Explore my GitHub
           </a>
         </div>
+        <div className={` ${css.projectType}`}>
+          <motion.span variants={fadeIn('right', 'tween', 0.5, 0.6)}>
+            Professional Projects
+          </motion.span>
+        </div>
         <div className={`flexCenter ${css.listContainer}`}>
           {/* PROJECT 1: GRAPHERRQL */}
           <motion.div
             variants={fadeIn('right', 'tween', 0.5, 0.6)}
             className='container2'
           >
-            <h2 className='paddings'>GraphErrQL</h2>
+            <h2 className='paddings flexCenter'>GraphErrQL</h2>
 
             <div className={`flexCenter ${css.showCase}`}>
               <motion.img
                 variants={fadeIn('right', 'tween', 0.5, 0.6)}
                 src='./GraphErrQLDemo.gif'
-                alt='project'
+                alt='moving image that shows how GraphErrQL developer tool works'
               />
             </div>
           </motion.div>
@@ -68,40 +73,87 @@ const Portfolio = () => {
               GraphQL query validation, metrics, and error assistance. We
               created this product with an emphasis on utilizing these tools
               within a natural and nondisruptive to the developer workflow.
-              <br />
-              <br />
-              <div className={`${css.linkContainer}`}>
-                <a
-                  className={`secondaryText `}
-                  href='https://github.com/oslabs-beta/GraphErrQL/tree/dev/grapherrql-package'
-                  target={'_blank'}
-                >
-                  GitHub
-                </a>
-                <a
-                  className={`secondaryText `}
-                  href='https://www.npmjs.com/org/grapherrql'
-                  target={'_blank'}
-                >
-                  NPM
-                </a>
-                <a
-                  className={`secondaryText `}
-                  href='https://medium.com/@gkphillips/introducing-grapherrql-22d877a8f353'
-                  target={'_blank'}
-                >
-                  Medium-Article
-                </a>
-                <a
-                  className={`secondaryText `}
-                  href='https://thenewstack.io/grapherrql-provides-much-needed-context-for-graphql-errors/'
-                  target={'_blank'}
-                >
-                  TheNewStack-Article
-                </a>
-              </div>
             </p>
+            <div className={`xPaddings ${css.linkContainer}`}>
+              <a
+                className={`secondaryText `}
+                href='https://github.com/oslabs-beta/GraphErrQL/tree/dev/grapherrql-package'
+                target={'_blank'}
+              >
+                GitHub
+              </a>
+              <a
+                className={`secondaryText `}
+                href='https://www.npmjs.com/org/grapherrql'
+                target={'_blank'}
+              >
+                NPM
+              </a>
+              <a
+                className={`secondaryText `}
+                href='https://medium.com/@gkphillips/introducing-grapherrql-22d877a8f353'
+                target={'_blank'}
+              >
+                Medium-Article
+              </a>
+              <a
+                className={`secondaryText `}
+                href='https://thenewstack.io/grapherrql-provides-much-needed-context-for-graphql-errors/'
+                target={'_blank'}
+              >
+                TheNewStack-Article
+              </a>
+            </div>
           </motion.div>
+        </div>
+        <div className={` ${css.projectType}`}>
+          <motion.span variants={fadeIn('right', 'tween', 0.5, 0.6)}>
+            Open-Source Contributions
+          </motion.span>
+        </div>
+        <div className={`flexCenter ${css.listContainer}`}>
+          {/* PROJECT 2: The Hop Cypress Testing */}
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.5, 0.6)}
+            className='container2'
+          >
+            <h2 className='paddings flexCenter'>The Hop</h2>
+            <div className={`flexCenter ${css.showCase}`}>
+              <motion.img
+                variants={fadeIn('right', 'tween', 0.5, 0.6)}
+                src='./TheHop-Cypress.gif'
+                alt='moving image of cypress end to end testing of The Hop'
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.6, 0.7)}
+            className={`paddings ${css.showCase}`}
+          >
+            <p className='paddings'>
+              The Hop is an event searching and bookmarking open source
+              application in which I contributed end-to-end testing utilizing
+              Cypress. The gif is Cypress running the tests I wrote,
+              showing the automated end-to-end testing of a real user scenario
+              in a replicated live setting.
+            </p>
+            <div className={`xPaddings ${css.linkContainer}`}>
+              <a
+                className={`secondaryText `}
+                href='https://github.com/Scooby-Gang/The-Hop-2.0'
+                target={'_blank'}
+              >
+                GitHub
+              </a>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className={` ${css.projectType}`}>
+          <motion.span variants={fadeIn('right', 'tween', 0.5, 0.6)}>
+            Personal Projects
+          </motion.span>
         </div>
         <div className={`flexCenter ${css.listContainer}`}>
           {/* PROJECT 2: BIG BRAIN Z STRAIN */}
@@ -109,7 +161,7 @@ const Portfolio = () => {
             variants={fadeIn('right', 'tween', 0.5, 0.6)}
             className='container2'
           >
-            <h2 className='paddings'>Big Brain Z-Strain</h2>
+            <h2 className='paddings flexCenter'>Big Brain Z-Strain</h2>
             <div className={`flexCenter ${css.showCase}`}>
               <motion.img
                 variants={fadeIn('right', 'tween', 0.5, 0.6)}
@@ -131,16 +183,16 @@ const Portfolio = () => {
               before our Holiday parties.
               <br />
               <br />
-              <div className={`${css.linkContainer}`}>
-                <a
-                  className={`secondaryText `}
-                  href='https://github.com/JeraldStephenson/project-infect'
-                  target={'_blank'}
-                >
-                  GitHub
-                </a>
-              </div>
             </p>
+            <div className={`xPaddings ${css.linkContainer}`}>
+              <a
+                className={`secondaryText `}
+                href='https://github.com/JeraldStephenson/project-infect'
+                target={'_blank'}
+              >
+                GitHub
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

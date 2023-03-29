@@ -97,12 +97,6 @@ const Hero = () => {
             </div>
             <div className={`${css.icons}`}>
               <a>
-                <FaReact />
-              </a>
-              <p>React</p>
-            </div>
-            <div className={`${css.icons}`}>
-              <a>
                 <TbBrandJavascript />
               </a>
               <p>JavaScript</p>
@@ -112,6 +106,12 @@ const Hero = () => {
                 <SiTypescript />
               </a>
               <p>TypeScript</p>
+            </div>
+            <div className={`${css.icons}`}>
+              <a>
+                <FaReact />
+              </a>
+              <p>React</p>
             </div>
             <div className={`${css.icons}`}>
               <a>

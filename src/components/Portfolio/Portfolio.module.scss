@@ -11,9 +11,25 @@
       align-items: flex-end;
       flex-wrap: wrap;
       > :nth-child(2) {
-        color: orange;
+        color: $secondary;
       }
     }
+  }
+  .projectType {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $sm) {
+      font-size: 1.7rem;
+    }
+    
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid ;
   }
   .listContainer {
     @media (max-width: $sm), (max-width: $md), (max-width: $lg) {
@@ -48,6 +64,10 @@
       font-weight: 800;
     }
     .linkContainer {
+      @media (max-width: $lg){
+        flex-direction: column;
+        gap: 0rem;
+      }
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -55,7 +75,7 @@
       a {
         font-size: 1.05rem;
         font-weight: 600;
-        color: orange;
+        color: $secondary;
       }
     }
   }
