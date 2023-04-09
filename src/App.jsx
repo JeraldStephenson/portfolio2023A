@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 import css from './styles/app.module.scss';
 
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Hero />
       <Portfolio />
+      <Contact />
     </div>
   );
 };
