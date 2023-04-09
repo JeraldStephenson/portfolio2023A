@@ -204,6 +204,7 @@ const Portfolio = () => {
             </div>
           </motion.div>
         </div>
+        <div className={css.projectType}></div>
       </div>
     </motion.section>
   );
