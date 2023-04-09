@@ -87,15 +87,15 @@ const Header = () => {
             <div className={`${css.headerIconContainer}`}>
               <a
                 className={`${css.headerIcon}`}
-                href='mailto:jstephenson.dev@gmail.com'
-                // href='#contact'
+                // href='mailto:jstephenson.dev@gmail.com'
+                href='#contact'
               >
                 <BiMailSend />
               </a>
               <a
                 className={`${css.headerIconText}`}
-                href='mailto:jstephenson.dev@gmail.com'
-                // href='#contact'
+                // href='mailto:jstephenson.dev@gmail.com'
+                href='#contact'
               >
                 {' '}
                 Email me
