@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import css from './Contact.module.scss';
 import { motion } from 'framer-motion';
-import { staggerChildren, fadeIn, slideIn } from '../../utils/motion';
+import { staggerChildren, fadeIn, } from '../../utils/motion';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -40,25 +40,10 @@ const Contact = () => {
     >
       <a className='anchor' id='contact'></a>
       <div className={`${css.container} innerWidth`}>
-        {/* <h5>Get In Touch</h5>
-        <h2>Contact Me</h2> */}
         <div className={`flexCenter  ${css.heading}`}>
           <div>
-            <motion.span
-              className='primaryText'
-              variants={fadeIn('right', 'tween', 0.2, 1)}
-            >
-              Contact Me
-            </motion.span>
+            <span className='primaryText'>Contact Me</span>
           </div>
-          {/* delete a tag if dont plan on linking defualt email app */}
-          <a
-            href='mailto:jstephenson.dev@gmail.com'
-            target={'_blank'}
-            className='secondaryText'
-          >
-            {/* Email */}
-          </a>
         </div>
         <div className={` ${css.projectType}`}>
           <motion.span variants={fadeIn('right', 'tween', 0.5, 0.6)}>
