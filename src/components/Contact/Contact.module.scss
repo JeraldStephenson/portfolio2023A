@@ -56,8 +56,8 @@
       &:focus {
         // outline: red;
         // color: $secondary;
-          outline: none;
-      box-shadow: 0 0 0 0.1rem rgba($secondary, 0.5);
+        outline: none;
+        box-shadow: 0 0 0 0.15rem rgba($secondary, 0.5);
       }
     }
   }

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import css from './Contact.module.scss';
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeIn, slideIn } from '../../utils/motion';
+import { staggerChildren, fadeIn, slideIn } from '../../utils/motion';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -30,14 +30,26 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className={`paddings ${css.wrapper}`}>
+    <motion.section
+      id='contact'
+      variants={staggerChildren}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: false, amount: 0.25 }}
+      className={`paddings ${css.wrapper}`}
+    >
       <a className='anchor' id='contact'></a>
       <div className={`${css.container} innerWidth`}>
         {/* <h5>Get In Touch</h5>
         <h2>Contact Me</h2> */}
         <div className={`flexCenter  ${css.heading}`}>
           <div>
-            <span className='primaryText'>Contact Me</span>
+            <motion.span
+              className='primaryText'
+              variants={fadeIn('right', 'tween', 0.2, 1)}
+            >
+              Contact Me
+            </motion.span>
           </div>
           {/* delete a tag if dont plan on linking defualt email app */}
           <a
@@ -53,7 +65,12 @@ const Contact = () => {
             Send me an Email
           </motion.span>
         </div>
-        <form ref={form} className='yPaddings flexCenter' onSubmit={sendEmail}>
+        <motion.form
+          ref={form}
+          className='yPaddings flexCenter'
+          onSubmit={sendEmail}
+          variants={fadeIn('up', 'tween', 0.3, 1)}
+        >
           <input
             type='text'
             name='name'
@@ -73,9 +90,9 @@ const Contact = () => {
           <button type='submit' className={`${css.btn}`}>
             Send Message
           </button>
-        </form>
+        </motion.form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
