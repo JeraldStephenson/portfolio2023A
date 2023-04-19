@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import css from './Contact.module.scss';
 import { motion } from 'framer-motion';
-import { staggerChildren, fadeIn, } from '../../utils/motion';
+import { staggerChildren, fadeIn } from '../../utils/motion';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -41,6 +41,7 @@ const Contact = () => {
       <a className='anchor' id='contact'></a>
       <div className={`${css.container} innerWidth`}>
         <div className={`flexCenter  ${css.heading}`}>
+          {/* animate? */}
           <div>
             <span className='primaryText'>Contact Me</span>
           </div>
