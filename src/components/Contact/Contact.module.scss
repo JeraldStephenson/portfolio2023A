@@ -38,8 +38,10 @@
     form {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
+      align-self: center;
       align-items: center;
+      width: 80%;
     }
 
     input,
@@ -51,6 +53,12 @@
       background: transparent;
       border: 2px solid $secondary;
       resize: vertical;
+      &:focus {
+        // outline: red;
+        // color: $secondary;
+          outline: none;
+      box-shadow: 0 0 0 0.1rem rgba($secondary, 0.5);
+      }
     }
   }
   .btn {
