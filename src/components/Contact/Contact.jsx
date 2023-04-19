@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -51,7 +51,7 @@ const Contact = () => {
             Send me an Email
           </motion.span>
         </div>
-        <form ref='form' className='yPaddings flexCenter' onSubmit={sendEmail}>
+        <form ref={form} className='yPaddings flexCenter' onSubmit={sendEmail}>
           <input
             type='text'
             name='name'
