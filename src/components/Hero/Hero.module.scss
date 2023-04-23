@@ -36,10 +36,19 @@
       align-items: center;
       justify-content: space-between;
       .experience {
+        @media (max-width: $sm), (max-width: $md) {
+          flex-direction: column;
+        }
         display: flex;
         align-items: center;
         gap: 1rem;
         > :nth-child(2) {
+          > :nth-child(2) {
+            @media (max-width: $sm), (max-width: $md) {
+              display: flex;
+              justify-content: center;
+            }
+          }
           line-height: 25px;
         }
       }

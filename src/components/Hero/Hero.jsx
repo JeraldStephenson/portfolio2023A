@@ -72,10 +72,10 @@ const Hero = () => {
             variants={fadeIn('right', 'tween', 0.3, 1)}
             className={css.experience}
           >
-            <div className='primaryText'>2023</div>
+            <div className='primaryText'>Skills</div>
             <div className='secondaryText'>
-              <div>Tech</div>
-              <div>Stack</div>
+              <div>Languages, Libraries,</div>
+              <div>and Frameworks:</div>
             </div>
           </motion.div>
           {/* should use an array and a function to parse all of the repeat code - will refactor after MVP is hosted */}
