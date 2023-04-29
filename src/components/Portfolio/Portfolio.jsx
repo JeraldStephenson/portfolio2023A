@@ -59,13 +59,13 @@ const Portfolio = () => {
             className={`paddings ${css.showCase}`}
           >
             <p className='paddings'>
-              <a
+              {/* <a
                 className={`secondaryText ${css.launchLink}`}
                 href='http://grapherrql.io/'
                 target={'_blank'}
               >
                 GraphErrQL launch site
-              </a>
+              </a> */}
               <br />
               <br />
               GraphErrQL is an npm developer tool I co-created with a small team
